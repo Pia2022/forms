@@ -8,17 +8,38 @@
     <link rel="stylesheet" href="styles/index.css">
     <title>Document</title>
 </head>
-<body>
-    <form action="">
-        <label for="full-name" class="label">Full name</label>
-        <input type="text" name="full-name" id="full-name" class="input-field" placeholder="Enter your full name." required maxlength="25">
-        <textarea name="message" id="" cols="10" rows="3"></textarea>
-        <button type="submit">Submit</button>
-
+<body bgcolor="red">
+    
+    <form class="form" autocomplete="off" action="">
+        <label for="full-name" class="label" name-size>FULL NAME</label>
+        
+        <br>
+        <input type="text" name="full-name" id="full-name" class="input-field" placeholder="Your Name" required maxlength="30">
+        <br>
+        <label for="email" class="label" email-size>EMAIL</label>
+        <br>
+        <input type="email" name="email" id="email" class="input-field" placeholder="Your Email" required maxlength="30">
+        <br>
+        <label for="message-regarding" class="label" mesregard-size >MESSAGE REGARDING</label>
+        <br>
+        <input type="text" name="message-regarding" id="mesessage-regarding" class="input-field" placeholder="Message Regarding" required maxlength="60">
+        <select name="regarding" class="regarding" id="regarding" multiple>
+            <option value="mes-regarding"></option>
+            <option value="dog"></option>
+            <option value="cat"></option>
+            <option value="bunny"></option>
+            <option value="horse"></option>
+        </select>
+        <br>
+        <label for="message" class="label" message-size>MESSAGE</label>
+        <textarea name="message" id="message" cols="10" rows="3" placeholder="Your message">Message</textarea>
+       <br>
+        <button type="submit" class="submit" disabled>SEND MESSAGE</button>
+    </form>
         <section>
             <img src="images/hiclipart 2.png" alt="yellow duck">
         </section>
-    </form>
+   
     
 </body>
 </html>
